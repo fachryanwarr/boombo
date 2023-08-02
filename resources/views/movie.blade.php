@@ -10,7 +10,7 @@
         <div class="py-8 px-4 mx-auto max-w-screen-lg lg:py-8">
             <div class="bg-gray-800 border border-gray-700 rounded-lg p-4 md:p-8 mb-8 md:w-[80%] mx-auto">
                 <div class="flex justify-between">
-                    <h1 class="text-white text-3xl md:text-5xl font-extrabold mb-2">{{ $movie["title"] }}</h1>
+                    <h1 class="text-white text-3xl md:text-5xl font-extrabold mb-2">{{ $movie->title }}</h1>
                 </div>
                 <div class="w-full md:flex">
                     <div class="md:w-[40%] rounded-lg overflow-hidden md:py-5">

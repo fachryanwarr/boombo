@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('title', 100);
             $table->string('slug', 100)->unique();
             $table->text('description');
-            $table->timestamp('release_date')->nullable();
+            $table->date('release_date')->nullable();
             $table->string('poster_url', 100);
             $table->integer('age_rating');
             $table->integer('ticket_price');
