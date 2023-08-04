@@ -38,7 +38,7 @@
         <div>
           <label for="email" class="block text-sm font-medium leading-6 text-white">Email</label>
           <div class="mt-2">
-            <input aria-required="true" id="email" name="email" type="email" value="{{ old('email') }}" required autofocus
+            <input aria-required="true" id="email" name="email" type="email" value="{{ old('email') }}" required autofocus autocomplete="off"
             class="px-4 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600  sm:text-sm sm:leading-6">
           </div>
         </div>
@@ -46,21 +46,24 @@
         <div>
             <label for="password" class="block text-sm font-medium leading-6 text-white">Password</label>
           <div class="mt-2">
-            <input aria-required="true" id="password" name="password" type="password" value="{{ old('password') }}" required class="px-4 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+            <input aria-required="true" id="password" name="password" type="password" value="{{ old('password') }}" required autocomplete="off"
+            class="px-4 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
           </div>
         </div>
 
         <div>
             <label for="name" class="block text-sm font-medium leading-6 text-white">Name</label>
           <div class="mt-2">
-            <input aria-required="true" id="name" name="name" type="text" value="{{ old('name') }}" required class="px-4 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+            <input aria-required="true" id="name" name="name" type="text" value="{{ old('name') }}" required autocomplete="off"
+            class="px-4 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
           </div>
         </div>
 
         <div>
             <label for="age" class="block text-sm font-medium leading-6 text-white">Age</label>
           <div class="mt-2">
-            <input aria-required="true" id="age" name="age" type="number" value="{{ old('age') }}" required class="px-4 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+            <input aria-required="true" id="age" name="age" type="number" value="{{ old('age') }}" required autocomplete="off"
+            class="px-4 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
           </div>
         </div>
   

@@ -13,7 +13,7 @@
       </svg>
       <span class="sr-only">Info</span>
       <div class="ml-3 text-sm font-medium">
-        {{ session('success') }}
+        {{ session('status') }}
       </div>
         <button type="button" class="ml-auto -mx-1.5 -my-1.5 bg-blue-50 text-blue-500 rounded-lg focus:ring-2 focus:ring-blue-400 p-1.5 hover:bg-blue-200 inline-flex items-center justify-center h-8 w-8 dark:bg-gray-800 dark:text-blue-400 dark:hover:bg-gray-700" data-dismiss-target="#alert-1" aria-label="Close">
           <span class="sr-only">Close</span>
@@ -57,7 +57,7 @@
         <div>
           <label for="email" class="block text-sm font-medium leading-6 text-white">Email</label>
           <div class="mt-2">
-            <input aria-required="true" id="email" name="email" type="email" value="{{ old('email') }}" required autofocus
+            <input aria-required="true" id="email" name="email" type="email" value="{{ old('email') }}" required autofocus autocomplete="off"
             class="p-5 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
           </div>
         </div>
@@ -67,7 +67,7 @@
             <label for="password" class="block text-sm font-medium leading-6 text-white">Password</label>
           </div>
           <div class="mt-2">
-            <input aria-required="true" id="password" name="password" type="password" required 
+            <input aria-required="true" id="password" name="password" type="password" required autocomplete="off"
             class="p-5 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
           </div>
         </div>

@@ -1,10 +1,6 @@
-@extends('layouts.base')
-
-@section('title')
-<title>Boombo | Movies</title>    
-@endsection
-
-@section('content')
+<div class="px-8 my-5 text-center md:text-left">
+    <p class="font-semibold text-xl text-white">Now Showing</p>
+</div>
 
 <div class="grid grid-cols-2 md:grid-cols-4 xl:grid-cols-6 gap-4 md:gap-8 px-8 my-5" id="movies">
     @foreach ($movies as $movie)
@@ -18,7 +14,3 @@
         </a>
     @endforeach
 </div>
-
-
-@endsection
-

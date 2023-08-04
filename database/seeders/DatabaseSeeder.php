@@ -82,18 +82,26 @@ class DatabaseSeeder extends Seeder
             'email' => 'mazayanur@gmail.com'
         ]);
         
-        BalanceHistory::create([
-            'amount' => 20000,
-            'description' => 'Top Up',
-            'user_id' => 2
-        ]);
+        // BalanceHistory::create([
+        //     'amount' => 20000,
+        //     'description' => 'Top Up',
+        //     'user_id' => 2
+        // ]);
         
-        TicketPurchased::create([
-            'movie_id' => 2,
-            'tanggal' => '2023-08-01',
-            'waktu' => '13:00:00',
-            'seat' => 'A5',
-            'user_id' => 1
-        ]);
+        // TicketPurchased::create([
+        //     'movie_id' => 2,
+        //     'tanggal' => '2023-08-01',
+        //     'waktu' => '13:00:00',
+        //     'seat' => 'A5',
+        //     'user_id' => 1
+        // ]);
+
+        // TicketPurchased::create([
+        //     'movie_id' => 3,
+        //     'tanggal' => '2023-08-01',
+        //     'waktu' => '13:00:00',
+        //     'seat' => 'A6',
+        //     'user_id' => 1
+        // ]);
     }
 }

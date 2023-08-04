@@ -44,6 +44,12 @@ class AuthController extends Controller {
             'age' => 'required',
         ]);
 
+        if ($validatedData['age'] < 10) {
+            return back()->withErrors([
+                'ageRestriction' => "You are not old enough to make account",
+            ]);
+        }
+
         $validatedData['password'] = bcrypt($validatedData['password']);
 
         User::create($validatedData);
