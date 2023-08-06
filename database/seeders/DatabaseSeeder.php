@@ -18,16 +18,6 @@ class DatabaseSeeder extends Seeder
     public function run(): void
     {
         Movie::create([
-            'title' => 'Guardians of the Galaxy Vol. 3',
-            'slug' => 'avatar-the-way-of-water',
-            'description' => 'Peter Quill masih trauma karena kehilangan Gamora. Ia perlu mengumpulkan timnya untuk melindungi alam semesta dan salah satu anggota mereka. Jika mereka gagal, Guardian akan berakhir.',
-            'release_date' => '2023-05-03',
-            'poster_url' => 'https://image.tmdb.org/t/p/w500/nAbpLidFdbbi3efFQKMPQJkaZ1r.jpg',
-            'age_rating' => 12,
-            'ticket_price' => 41000
-        ]);
-        
-        Movie::create([
             'title' => 'Split',
             'slug' => 'split',
             'description' => 'Ketika ketiga gadis remaja sedang menunggu ayah mereka di dalam mobil, seorang pria misterius menculik dan membawa mereka ke dalam sebuah bunker. Sang penculik yang bernama Kevin (James McAvoy) adalah seorang pria dengan gangguan jiwa yang membuatnya memiliki 23 kepribadian yang berbeda, yang diantaranya adalah seorang wanita dan anak berumur 9 tahun yang bernama Hedwig.  Sebagai salah satu gadis yang diculik, Casey berusaha meloloskan diri dengan meyakinkan salah satu kepribadian Kevin untuk melepaskan mereka. Akan tetapi hal tersebut tidaklah mudah, terlebih setelah Hedwig memperingatkan mereka akan the Beast yang merupakan kepribadian Kevin yang paling berbahaya.',
@@ -67,41 +57,30 @@ class DatabaseSeeder extends Seeder
             'ticket_price' => 38000
         ]);
         
+        Movie::create([
+            'title' => 'To Catch a Killer',
+            'slug' => 'to-catch-a-killer',
+            'description' => 'Baltimore. Malam tahun baru. Seorang petugas polisi yang berbakat tetapi bermasalah (Shailene Woodley) direkrut oleh kepala penyelidik FBI (Ben Mendelsohn) untuk membantu membuat profil dan melacak individu yang terganggu yang meneror kota.',
+            'release_date' => '2023-04-06',
+            'poster_url' => 'https://image.tmdb.org/t/p/w500/mFp3l4lZg1NSEsyxKrdi0rNK8r1.jpg',
+            'age_rating' => 15,
+            'ticket_price' => 47000
+        ]);
+        
         
         User::create([
             'name' => 'Fachry Anwar',
             'age' => 19,
             'password' => bcrypt('asoy'),
-            'email' => 'fachryanwar@gmail.com'
+            'username' => 'fachryanwar',
+            'is_admin' => true
         ]);
         
         User::create([
             'name' => 'Mazaya Nur',
             'age' => 19,
             'password' => bcrypt('sayang'),
-            'email' => 'mazayanur@gmail.com'
+            'username' => 'mazayanur'
         ]);
-        
-        // BalanceHistory::create([
-        //     'amount' => 20000,
-        //     'description' => 'Top Up',
-        //     'user_id' => 2
-        // ]);
-        
-        // TicketPurchased::create([
-        //     'movie_id' => 2,
-        //     'tanggal' => '2023-08-01',
-        //     'waktu' => '13:00:00',
-        //     'seat' => 'A5',
-        //     'user_id' => 1
-        // ]);
-
-        // TicketPurchased::create([
-        //     'movie_id' => 3,
-        //     'tanggal' => '2023-08-01',
-        //     'waktu' => '13:00:00',
-        //     'seat' => 'A6',
-        //     'user_id' => 1
-        // ]);
     }
 }

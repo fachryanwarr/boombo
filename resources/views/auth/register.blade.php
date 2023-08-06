@@ -36,9 +36,9 @@
       <form class="space-y-6" action="/auth/register/" method="POST">
         @csrf
         <div>
-          <label for="email" class="block text-sm font-medium leading-6 text-white">Email</label>
+          <label for="username" class="block text-sm font-medium leading-6 text-white">Username</label>
           <div class="mt-2">
-            <input aria-required="true" id="email" name="email" type="email" value="{{ old('email') }}" required autofocus autocomplete="off"
+            <input aria-required="true" id="username" name="username" type="text" value="{{ old('username') }}" required autofocus autocomplete="off"
             class="px-4 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600  sm:text-sm sm:leading-6">
           </div>
         </div>

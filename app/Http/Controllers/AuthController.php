@@ -15,8 +15,8 @@ class AuthController extends Controller {
 
     public function authenticate(Request $request) {
         $credentials = $request->validate([
-            'email' => 'required|email:rfc,dns',
-            'password' => ['required'],
+            'username' => 'required',
+            'password' => 'required',
         ]);
 
         if (Auth::attempt($credentials)) {
@@ -27,7 +27,7 @@ class AuthController extends Controller {
  
         return back()->withErrors([
             'loginError' => 'Incorrect username or password.',
-        ])->onlyInput('email');
+        ])->onlyInput('username');
     }
 
     public function register() {
@@ -38,7 +38,7 @@ class AuthController extends Controller {
 
     public function registerPost(Request $request) {
         $validatedData = $request->validate([
-            'email' => 'required|unique:users|max:100|email:rfc,dns',
+            'username' => 'required|unique:users|max:100',
             'password' => 'required|max:255|min:6',
             'name' => 'required|max:255',
             'age' => 'required',

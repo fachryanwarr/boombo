@@ -34,16 +34,16 @@
 <div class="px-8 md:grid md:grid-cols-2 md:place-content-center lg:grid-cols-4 gap-4 mx-auto">
     @if (!empty($tickets))
         @foreach ($tickets as $ticket)
-        <div class="flex bg-white w-[80%] md:w-auto my-2 mx-auto">
+
+        <div class="flex bg-white md:w-auto my-2 mx-auto ">
           <div class="rotate-180 p-2 [writing-mode:_vertical-lr] w-[10%]">
             <div
-              datetime="2022-10-10"
               class="flex items-center justify-between gap-4 text-xs font-bold uppercase text-gray-900"
             >
               <span>{{ $ticket->tanggal }}</span>
               <span class="w-px flex-1 bg-gray-900/10"></span>
               <span>{{ $ticket->waktu }}</span>
-          </div>
+            </div>
           </div>
         
           <div class="">
@@ -53,10 +53,10 @@
             />
           </div>
         
-          <div class="flex flex-1 flex-col justify-between w-[30%] p-2">
-                <h3 class="font-bold uppercase text-gray-900">{{ $ticket->movie->title }}</h3>
+          <div class="flex flex-col justify-between w-[30%] p-2">
+              <h3 class="font-bold uppercase text-gray-900 text-ellipsis">{{ $ticket->movie->title }}</h3>
         
-              <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-700">{{ $ticket->seats }}</p>
+              <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-700">{{ $ticket->seat }}</p>
           </div>
   
       </div>

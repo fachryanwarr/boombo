@@ -46,7 +46,7 @@
 
 <div class="flex min-h-full flex-col justify-center px-6 mt-10 lg:px-8 border border-blue-500 rounded-xl w-[90%] md:w-[50%] py-4 mx-auto">
     <div class="sm:mx-auto sm:w-full sm:max-w-sm">
-      <img class="mx-auto h-10 w-auto" src="https://flowbite.com/docs/images/logo.svg" alt="Your Company">
+      <img class="mx-auto h-10 w-auto" src="/images/planet.png" alt="Your Company">
       <h2 class="mt-3 text-center text-2xl font-bold leading-9 tracking-tight text-white">Sign in to your account</h2>
     </div>
   
@@ -55,9 +55,9 @@
       <form class="space-y-6" action="/auth/sign-in/" method="POST">
         @csrf
         <div>
-          <label for="email" class="block text-sm font-medium leading-6 text-white">Email</label>
+          <label for="username" class="block text-sm font-medium leading-6 text-white">Username</label>
           <div class="mt-2">
-            <input aria-required="true" id="email" name="email" type="email" value="{{ old('email') }}" required autofocus autocomplete="off"
+            <input aria-required="true" id="username" name="username" type="text" value="{{ old('username') }}" required autofocus autocomplete="off"
             class="p-5 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
           </div>
         </div>

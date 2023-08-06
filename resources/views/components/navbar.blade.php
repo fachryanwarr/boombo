@@ -1,7 +1,7 @@
   <nav class="border-gray-200 bg-gray-900">
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
     <a href="/" class="flex items-center">
-        <img src="https://flowbite.com/docs/images/logo.svg" class="h-8 mr-3" alt="Logo" />
+        <img src="/images/planet.png" class="h-8 mr-3" alt="Logo" />
         <span class="self-center text-2xl font-semibold whitespace-nowrap text-white">Boombo</span>
     </a>
     <div class="flex items-center md:order-2">
@@ -15,7 +15,7 @@
         <div class="z-50 hidden my-4 text-base list-none divide-y rounded-lg shadow bg-gray-700 divide-gray-600" id="user-dropdown">
           <div class="px-4 py-3">
             <span class="block text-sm text-white">{{ auth()->user()->name }}</span>
-            <span class="block text-sm truncate text-gray-400">{{ auth()->user()->email }}</span>
+            <span class="block text-sm truncate text-gray-400">{{ auth()->user()->username }}</span>
           </div>
           <ul class="py-2" aria-labelledby="user-menu-button">
             <li>
